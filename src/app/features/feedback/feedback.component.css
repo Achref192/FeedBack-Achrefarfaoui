@@ -1,0 +1,29 @@
+.card {
+  border: none;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-header {
+  border-bottom: none;
+}
+
+.badge {
+  font-size: 0.75em;
+}
+
+.form-control, .form-select {
+  border-radius: 0.5rem;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}

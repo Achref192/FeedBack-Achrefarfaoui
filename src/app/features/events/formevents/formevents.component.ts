@@ -18,7 +18,17 @@ export class FormeventsComponent {
 
 
   // Call your service here
-    this.dataService.addEvent(this.eventy);
+    this.dataService.addEvent(this.eventy).subscribe({
+      next: (res) => {
+        console.log('Event added successfully', res);
+        alert('Event added successfully!');
+        this.eventy = new Eventy();
+      },
+      error: (err) => {
+        console.error('Error', err);
+        alert('Failed to add event!');
+      }
+    });
 }
 
 }
